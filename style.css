@@ -22,7 +22,7 @@ h1 {
   margin: 0 auto;
   box-shadow: 5px 5px 10px black;
   background: url("night.jpg");
-  animation: background-defile 20s linear infinite;
+  animation: background-defile 30s linear infinite;
 }
 
 @keyframes background-defile {
@@ -37,10 +37,9 @@ h1 {
 .grille div {
   width: 25px;
   height: 25px;
-  border: 1px solid yellow;
 }
 
-.player {
+.tireur {
   background: url("player.png");
   background-position: center;
   background-size: contain;
@@ -54,9 +53,15 @@ h1 {
 }
 
 .boom {
-  background-color: red;
+  background: url("explosion.png");
+  background-position: center;
+  background-size: contain;
 }
 
 .laser {
-  background-color: orange;
+  background: url("laser.png");
+  transform: rotate(90deg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
