@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}  
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.grille {
+  display: flex;
+  flex-wrap: wrap;
+  border: 0.1px solid black;
+  box-sizing: content-box;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px black;
+  background: url("night.jpg");
+  animation: background-defile 20s linear infinite;
+}
+
+@keyframes background-defile {
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: 998px;
+  }
+}
+
+.grille div {
+  width: 25px;
+  height: 25px;
+  border: 1px solid yellow;
+}
+
+.player {
+  background: url("player.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.alien {
+  background : url("opponent.png");
+  transform: rotate(180deg);
+  background-position: center;
+  background-size: contain;
+}
+
+.boom {
+  background-color: red;
+}
+
+.laser {
+  background-color: orange;
+}
